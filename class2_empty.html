@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js | Class 2</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <style>
+        /* Basic styles for the SVG */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+        padding: 5px;
+        text-align: left;
+        }
+
+        td.bold {
+            color: red;
+        }
+
+        text {
+            font-size: 12px;
+            width: 50px;
+        }
+
+        svg {
+            width: 250px;
+            height: 150px;
+            overflow: visible;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Table to select (DO NOT TOUCH THIS) -->
+    <div id="container"></div>
+
+    <script>
+
+        //select container
+        const container = d3.select('#container');
+
+        // append SVG
+
+        //add margin
+
+        // append circle
+
+
+        //Import the csv
+        d3.csv('un_permanent_members_gdp.csv').then(function(data){
+
+
+            //convert the points from strings to numbers
+            data.forEach(d => {
+                //rename properties
+                d.gdp = +d['GDP (in million USD)'];
+                d.pop = +d['Population (in millions)'];
+                d.capita = +d['GDP per Capita (USD)'];
+            });
+
+            //add circles
+
+                //import data
+
+                //add circle and properties
+
+                // use function data (d) and index (i) properties to move circles vercially
+
+                // use function data (d) and index (i) properties to move circles horizontally
+
+                // use function data (d) and index (i) properties to make circles bigger
+
+                // add a fill
+
+                
+            //add text with data
+
+                //append text element
+
+                //add x variable
+
+                //add text anchor
+
+                //add y variable
+
+                //add text
+
+                
+
+            
+
+
+
+        });
+
+
+
+
+    
+    </script>
+
+</body>
+
+
+
+
+</html>
