@@ -79,11 +79,11 @@
             .enter()
             //add circle and properties
             .append('circle')
-                // use function data (d) and index (i) properties to move circles vercially
+                // use function data (d) and index (i) properties to move circles horizontally
                 .attr('cx', function(d,i){
                     return margin_left + (i * 45)
                 })
-                // use function data (d) and index (i) properties to move circles horizontally
+                // use function data (d) and index (i) properties to move circles vercially
                 .attr('cy',function(d,i){
                     return margin_left
                 })
