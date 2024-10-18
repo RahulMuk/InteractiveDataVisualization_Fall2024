@@ -46,10 +46,20 @@
         const container = d3.select('#container');
 
         // append SVG
+        const svg = container.append('svg');
 
         //add margin
+        const margin_top = 100;
+        const margin_left = 40;
 
         // append circle
+        // svg.append('circle')
+        //     .attr('cx',margin_left)
+        //     .attr('cy',margin_top)
+        //     .attr('r',30)
+        //     .attr('fill','Royalblue')
+
+
 
 
         //Import the csv
@@ -75,7 +85,7 @@
                 // use function data (d) and index (i) properties to move circles vercially
 
                 // use function data (d) and index (i) properties to make circles bigger
-
+                
                 // add a fill
 
                 
@@ -90,12 +100,6 @@
                 //add y variable
 
                 //add text
-
-                
-
-            
-
-
 
         });
 
