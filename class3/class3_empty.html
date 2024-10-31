@@ -61,11 +61,17 @@
             //make scales
 
             //d3 min/max/extent
+            const capita_min = d3.min(data,function(d){
+                return d.capita;
+            });
 
 
 
 
             //number scale (scaleLinear)
+            const numberRadius = d3.scaleLinear()
+            .domain([0,70000]) //input
+            .range([5,30]) //output
 
 
             //color scale (scaleOrdinal)
@@ -85,7 +91,7 @@
                 })
                 .attr('r',function(d,i){
                     //radius size based on scale
-                    return d.capita/5000
+                    return numberRadius(d.capita)
                 })
                 // add a fill
                 .attr('fill',function(d){
